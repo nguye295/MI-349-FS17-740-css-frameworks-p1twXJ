@@ -2,44 +2,89 @@
 <html>
 <head>
   <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>3D Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Penguin Service</title>
   <style>
-
+    body {
+      margin: 0;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .container {
+      text-align: center;
+    }
+    img {
+      align-content: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+    img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    @media (max-width: 600px) {
+      .column {
+          width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  	<a class="navbar-brand">Penguin Services</a>
+    <br>
+    <br>
+    	<ul class="navbar-nav">
+      	<li class="nav-item">
+        	<a class="nav-link" href="https://nguye295-html-multiple-pages.surge.sh/">Project 1</a>
+      	</li>
+        <br>
+      	<li class="nav-item">
+        	<a class="nav-link" href="https://nguye295-html-multiple-pages.surge.sh/cats/ragdoll/">Project 2</a>
+      	</li>
+        <br>
+      	<li class="nav-item">
+        	<a class="nav-link" href="https://nguye295-html-multiple-pages.surge.sh/bunnies/">Project 3</a>
+      	</li>
+    	</ul>
+    </nav>
+
+  <br>
   <div class="container">
 
-  <h3>Two reasons to buy our product:</h3>
+  <h3>Two jobs you can hire us for:</h3>
 
   <div class="row">
     <div class="one-half column">
-      <h4>It's super good</h4>
-      <ul>
-        <li>Words</li>
-        <li>cannot</li>
-        <li>express</li>
-        <li>how</li>
-        <li>good</li>
-        <li>it</li>
-        <li>is</li>
-      </ul>
+      <div class="thumbnail">
+        <a href="https://pixabay.com/en/researcher-tux-inkscape-vector-1625959/" target="_blank">
+          <img src="gardener.png" alt="The Gardener">
+        </a>
+      </div>
+      <h4>Gardener</h4>
+      <p>Job discription</p>
     </div>
 
     <div class="one-third column">
-      <h4>It's revolutionary</h4>
-      <ul>
-        <li>So</li>
-        <li>revolutionary</li>
-        <li>you</li>
-        <li>won't</li>
-        <li>believe</li>
-        <li>it</li>
-      </ul>
+      <div class="thumbnail">
+        <a href="https://pixabay.com/en/acdc-tux-inkscape-vector-penguin-1625958/" target="_blank">
+          <img src="schemer.png" alt="The Schemer">
+        </a>
+      </div>
+      <h4>Schemer</h4>
+        <p>Job description</p>
     </div>
   </div>
 
